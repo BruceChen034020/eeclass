@@ -1,0 +1,127 @@
+/** mod_note **/
+
+.mod_note .point,
+.mod_note .question {padding-left:20px}
+
+.mod_note .point	{background:url(/sys/res/icon/note-point.png) no-repeat}
+.mod_note .question {background:url(/sys/res/icon/note-question.png) no-repeat}
+
+.mod_note .userList				{margin:0; padding:0}
+.mod_note .userList li		{display:inline-block; margin-right:20px; box-sizing:border-box; width:66px}
+.mod_note .userList li .item		{text-align:center}
+.mod_note .userList li img			{padding:1px; border:1px solid #ccc; width:64px; height:64px;}
+.mod_note .userList li .name		{text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+.myNote ul.mainList  {padding:0; margin:0; margin-top:5px; list-style:none}
+.myNote ul.mainList ul{list-style-type:disc;}
+.myNote .item		{position:relative; line-height:1.8; margin-bottom:10px; padding:0 5px; white-space:normal; background-position:0 1px; background-repeat:no-repeat; border-bottom:1px solid #ddd}
+.myNote .item:hover	{background-color:#ffd}
+.myNote .item:hover	.noteGrab {display:block;}
+.myNote .item.light	{background-color:#dff}
+
+.myNote .noteGrab {display:none; position:absolute; top:5px; left:2px; width:16px; height:25px; background:url(/sys/res/icon/drag.png) no-repeat center center #eee; cursor:move}
+.myNote .item .main			 {display:block; background:#fff; padding:2px; margin:5px; border:1px solid #bbb; box-shadow:0px 1px 2px #ccc; border-radius:2px}
+.myNote .item .main:hover	 {border-color:#08c; box-shadow:0 1px 4px rgba(0, 105, 214, 0.25)}
+.myNote .item .main img			 {width:160px}
+.myNote .item .note			 {overflow:hidden; margin-bottom:5px}
+.myNote .item .hint			 {height:21px}
+
+.myNote .item .tool			{ font-size: 0px; position:absolute; right:5px; top:5px; z-index:5; display:none; line-height:0}
+.myNote .item:hover .tool	{display:block; background-color:#fff; outline:1px solid #ddd}
+.myNote .item .tool.disabled {display: none;}
+
+.myNote .item .tool span       {display:inline-block; width:12px; height:12px; box-sizing: border-box; opacity:.7; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; padding: 11px; background-repeat: no-repeat; background-position: center;}
+.myNote .item .tool span:hover {opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+
+.myNote .item.thumb			 {float:left; width:325px; line-height:1.6; margin:0;  padding:15px; vertical-align:top; border:0}
+.myNote .item.thumb:hover	 {background:none}
+.myNote .item.thumb .main		 {padding:4px}
+.myNote .item.thumb img			 {width:100%}
+.myNote .item.thumb .note		 {margin-bottom:0; padding-left:5px; padding-right:60px; line-height:1; color:#777; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+.myNote .item.thumb .icon		 {display:inline-block; height:16px; background-position:0 0}
+.myNote .item.thumb .hint		 {position:absolute;bottom:9px;right:20px}
+
+.myNote .point,
+.myNote .question	{padding-left:20px; background-position:2px 5px; background-repeat:no-repeat}
+
+.myNote .topMost	{margin-left:-20px; padding-left:20px; background-image:url(/sys/res/icon/hot.gif); background-position:0px 25px; background-repeat:no-repeat}
+.myNote .point		{background-image:url(/sys/res/icon/note-point.png)}
+.myNote .question	{background-image:url(/sys/res/icon/note-question.png)}
+
+.myNote .item .seeker {display:inline-block; margin-right:3px}
+.myNote .item .canvas {display:inline-block; position:relative; top:-4px}
+.myNote .item .canvas span     {display:inline-block; width:16px; height:16px}
+.myNote .item .canvas .anchor  {background:url(/sys/res/icon/pin-medium.png) no-repeat}
+.myNote .item .canvas .drawing {background:url(/sys/res/icon/drawing-medium.png) no-repeat}
+.myNote .item .time {float:right}
+
+.myNote .item.thumb .seeker {float:right; margin-left:3px}
+.myNote .item.thumb .canvas {float:right; position:static}
+.myNote .item.thumb .time   {float:left}
+
+.myNote .item.simple {margin:0; padding:10px 5px 5px 20px; background-position:2px 15px;}
+.myNote .item.simple .tool          {top:10px;}
+.myNote.hide-tool .item:hover .tool {display:none;}
+.myNote .item.simple .main          {margin:2px 2px 0 5px;}
+.myNote .item.simple .hint          {height:auto;}
+.myNote .item.simple .updateTimeWrapper {padding:4px 2px 0;}
+.myNote .item.simple .updateTime	{margin:0}
+.myNote .item.simple .noteWrapper   {padding:0 5px 4px; overflow:hidden; line-height:1;}
+.myNote .item.simple .note          {line-height:1.6;}
+.myNote .item.simple .seekerWrapper {padding:4px 2px 0; line-height:1;}
+.myNote .item.simple .seeker        {margin:0; padding:2px 3px 3px; font-size:13px;}
+
+.myNote .private	{margin-right:5px}
+
+.myNote .list[count='0'] .noData {display:block}
+.myNote .list .noData			 {display:none}
+
+.myNote .modalBox .btnDiv        {float:right; margin-right:15px;}
+
+.myNote .modalBox li             {width: 425px;}
+.myNote .modalBox .liDiv  div    {display: inline}
+.myNote .modalBox .liDiv .time   {position: absolute; width:200px; overflow: hidden; text-overflow: ellipsis;}
+.myNote .modalBox .liDiv .hint   {padding-left: 220px;}
+.myNote .modalBox .liDiv a       {float:right;}
+
+.myNote .title .changeView {font-size:12px; float:right; margin:12px 10px 0 0;}
+
+
+.mod_note .note-form {position:relative; margin:0; padding:15px 5px 5px 5px; border-bottom:1px solid #ddd;}
+.mod_note .note-form:first-child {padding-top:0;}
+.mod_note .note-form .note-modal {display:none; position:absolute; top:0px; right:0px; bottom:0px; left:0px; background:#fff; opacity:.6; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";}
+.mod_note .note-form .note-panel {margin-top:10px;}
+.mod_note .note-form .note-panel-lower {margin-top:4px;}
+.mod_note .note-form label   {font-size:13px; display: inline-block; margin-top: 0px;}
+.mod_note .note-form.edit .clock  {display:inline-block; width: 16px; height: 16px; margin-right: 2px; background: url(/sys/res/icon/clock1.png) no-repeat; cursor: pointer;} /* show clock in note form in editing mode */
+.mod_note .note-form .time   {display: inline-block; width:80px; height: 24px; padding: 4px 6px; box-sizing: border-box; text-align:center;}
+.mod_note .note-form .extra  {margin:-1px 5px 0;}
+.mod_note .note-form .submit {margin:-1px 0 0 4px;}
+
+.drawing-hint  {display:none; position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; z-index:80; font-size:50px; font-weight:bold; background:#000; color:#fff; opacity:.8; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"}
+.drawing-panel {display:none; position:absolute; box-sizing:border-box; padding:6px; border:1px solid #000000; border:1px solid rgba(0, 0, 0, .3); border-radius:6px; box-shadow:0 3px 7px rgba(0, 0, 0, .3); background:#ddd; z-index: 100;}
+.drawing-panel .icon {display:inline-block; width:16px; height:16px; margin-top:2px; line-height:16px; vertical-align:text-top}
+.drawing-panel .icon.pencil       {background:url(/sys/res/icon/pencil.png) no-repeat}
+.drawing-panel .icon.highlighter  {background:url(/sys/res/icon/highlighter.png) no-repeat}
+.drawing-panel .icon.ellipse      {background:url(/sys/res/icon/ellipse.png) no-repeat}
+.drawing-panel .icon.rect         {background:url(/sys/res/icon/rect.png) no-repeat}
+.drawing-panel .icon.line    	  {background:url(/sys/res/icon/line.png) no-repeat}
+.drawing-panel .icon.arrow    	  {background:url(/sys/res/icon/arrow.png) no-repeat}
+.drawing-panel .icon.lineArrow    {background:url(/sys/res/icon/lineArrow.png) no-repeat}
+.drawing-panel .icon.eraser       {background:url(/sys/res/icon/eraser.png) no-repeat}
+.drawing-panel .icon.selection    {background:url(/sys/res/icon/selection.png) no-repeat}
+.drawing-panel .icon.color        {margin:2px -3px 0;width:14px;height:14px;border-radius:2px}
+.drawing-panel .icon.undo    	  {background:url(/sys/res/icon/undo.png) no-repeat}
+.drawing-panel .icon.redo    	  {background:url(/sys/res/icon/redo.png) no-repeat}
+.drawing-panel .icon.width        {background:url(/sys/res/icon/width.png) no-repeat}
+.drawing-panel .btn-group             {margin: 0 5px 0 0}
+.drawing-panel .dropdown-menu         {width:24px;min-width:24px;left:auto;right:0}
+.drawing-panel .dropdown-menu li      {width:24px;min-width:24px}
+.drawing-panel .dropdown-menu a       {padding:5px}
+.drawing-panel .dropdown-menu a div   {width:14px;height:14px;background:#000;border-radius:2px}
+.drawing-panel .dropdown-menu.w,
+.drawing-panel .dropdown-menu.w li    {width:39px;min-width:39px}
+.drawing-panel .dropdown-menu.w a div {width:auto}
+.drawing-panel .dropdown-menu.s       {left:83px}
+.drawing-panel .dropdown-menu.s a     {padding-left:12px}
+.drawing-panel span.close { padding: 4px 5px 5px 10px; font-size: 24px}
